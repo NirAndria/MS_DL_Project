@@ -1,0 +1,11 @@
+path:: ../MS_DL_Project/img_webscrapp/ # dataset root dir
+train: Selection # train images (relative to 'path') 128 images
+val: Selection # val images (relative to 'path') 128 images
+test: # test images (optional)
+
+# Classes (80 COCO classes)
+names:
+    0: bird
+    1: helicopter
+    2: plane
+    3: drone
