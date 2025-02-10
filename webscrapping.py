@@ -101,19 +101,21 @@ def download_images(image_urls,label_list):
 def main():
     #url = input("Enter the Google Image URL: ")
     url_list = [
-        'https://www.google.com/search?q=small+number+of+birds+seen+in+the+sky&sca_esv=df054736d75a2025&hl=fr&udm=2&cs=1&rlz=1C1UEAD_frFR969FR969&biw=1536&bih=695&sxsrf=AHTn8zrqrrP-KkFipc7qQ7FG7Ah0owc4mA%3A1738770760261&ei=SImjZ_jXD5StkdUP0pqKqQQ&ved=0ahUKEwj4m4vs8ayLAxWUVqQEHVKNIkUQ4dUDCBE&uact=5&oq=small+number+of+birds+seen+in+the+sky&gs_lp=EgNpbWciJXNtYWxsIG51bWJlciBvZiBiaXJkcyBzZWVuIGluIHRoZSBza3lIgjBQ7wlY_S5wAngAkAEAmAGyAaABjw2qAQQxMi41uAEDyAEA-AEBmAIBoAIHwgIEECMYJ8ICBhAAGAgYHpgDAIgGAZIHATGgB4UG&sclient=img',
-        'https://www.google.com/search?q=plane%20seen%20in%20the%20sky&hl=fr&udm=2&tbs=rimg:Ces9imT4LwTsYQ_1lO8Dq2GKEsgIAwAIA2AIA4AIA&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CCUQuIIBahcKEwiImJG44ZqLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
-        'https://www.google.com/search?q=plane%20seen%20in%20the%20sky&hl=fr&tbs=rimg:CWEJ8e3tGDsUYUzTIvjcxU4LsgIAwAIA2AIA4AIA&udm=2&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CBoQuIIBahcKEwigwcCu9qyLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
-        'https://www.google.com/search?q=drone%20seen%20in%20the%20sky&hl=fr&udm=2&tbs=rimg:CUXfsVLzkPZjYYNECE8wa8zvsgIAwAIA2AIA4AIA&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CBoQuIIBahcKEwjglMrm4JqLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
-        'https://www.google.com/search?q=helicopter%20%20seen%20in%20the%20sky&hl=fr&udm=2&tbs=rimg:CQZxe_1Pja8TcYZmPv26E-lntsgIAwAIA2AIA4AIA&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CBwQuIIBahcKEwi4tvLY4ZqLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
+        #'https://www.google.com/search?q=small+number+of+birds+seen+in+the+sky&sca_esv=df054736d75a2025&hl=fr&udm=2&cs=1&rlz=1C1UEAD_frFR969FR969&biw=1536&bih=695&sxsrf=AHTn8zrqrrP-KkFipc7qQ7FG7Ah0owc4mA%3A1738770760261&ei=SImjZ_jXD5StkdUP0pqKqQQ&ved=0ahUKEwj4m4vs8ayLAxWUVqQEHVKNIkUQ4dUDCBE&uact=5&oq=small+number+of+birds+seen+in+the+sky&gs_lp=EgNpbWciJXNtYWxsIG51bWJlciBvZiBiaXJkcyBzZWVuIGluIHRoZSBza3lIgjBQ7wlY_S5wAngAkAEAmAGyAaABjw2qAQQxMi41uAEDyAEA-AEBmAIBoAIHwgIEECMYJ8ICBhAAGAgYHpgDAIgGAZIHATGgB4UG&sclient=img',
+        #'https://www.google.com/search?q=plane%20seen%20in%20the%20sky&hl=fr&udm=2&tbs=rimg:Ces9imT4LwTsYQ_1lO8Dq2GKEsgIAwAIA2AIA4AIA&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CCUQuIIBahcKEwiImJG44ZqLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
+        #'https://www.google.com/search?q=plane%20seen%20in%20the%20sky&hl=fr&tbs=rimg:CWEJ8e3tGDsUYUzTIvjcxU4LsgIAwAIA2AIA4AIA&udm=2&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CBoQuIIBahcKEwigwcCu9qyLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
+        #'https://www.google.com/search?q=drone%20seen%20in%20the%20sky&hl=fr&udm=2&tbs=rimg:CUXfsVLzkPZjYYNECE8wa8zvsgIAwAIA2AIA4AIA&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CBoQuIIBahcKEwjglMrm4JqLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
+        #'https://www.google.com/search?q=helicopter%20%20seen%20in%20the%20sky&hl=fr&udm=2&tbs=rimg:CQZxe_1Pja8TcYZmPv26E-lntsgIAwAIA2AIA4AIA&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CBwQuIIBahcKEwi4tvLY4ZqLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25',
+        'https://www.google.com/search?q=drone%20seen&hl=fr&tbs=rimg:CSHFUPL-8cAVYU0SqzQyAGEesgIAwAIA2AIA4AIA&udm=2&cs=1&rlz=1C1UEAD_frFR969FR969&sa=X&ved=0CCQQuIIBahcKEwiQ5O2PubmLAxUAAAAAHQAAAAAQBw&biw=1536&bih=695&dpr=1.25'
     ]
 
     label_list = [
-        'birds',
-        'plane',
-        'plane,'
-        'drone',
-        'helicopter'
+        # 'birds',
+        # 'plane',
+        # 'plane,'
+        # 'drone',
+        # 'helicopter'
+        "drone"
     ]
 
     image_urls_list = []
