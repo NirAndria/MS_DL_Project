@@ -1,7 +1,7 @@
-path:: ../MS_DL_Project/img_webscrapp/
-train: MS_DL_Project/img_webscrapp/Selection
-val: MS_DL_Project/img_webscrapp/Selection 
-test: 
+path:: ../MS_DL_Project/augmented_images/
+train: MS_DL_Project/augmented_images/train
+val: MS_DL_Project/augmented_images/val 
+test: MS_DL_Project/augmented_images/test
 
 names:
     0: bird
