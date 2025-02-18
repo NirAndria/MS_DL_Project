@@ -1,0 +1,10 @@
+path:: ../MS_DL_Project/img_webscrapp/
+train: Selection
+val: Selection 
+test: 
+
+names:
+    0: bird
+    1: helicopter
+    2: plane
+    3: drone
