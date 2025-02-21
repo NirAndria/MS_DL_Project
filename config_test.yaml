@@ -1,0 +1,10 @@
+path:: ../MS_DL_Project/augmented_images/
+train: MS_DL_Project/augmented_images/train
+val: MS_DL_Project/augmented_images/test 
+test: MS_DL_Project/augmented_images/test
+
+names:
+    0: bird
+    1: helicopter
+    2: plane
+    3: drone
